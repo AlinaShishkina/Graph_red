@@ -1,0 +1,10 @@
+﻿  FileManager.cpp
+  MainForm.cpp
+C:\Users\Владимир\Desktop\Новые заказы в работе\ООП\Алина Шишкина\Проект\AreaPlanning\MainForm.cpp(9,39): warning C4129: i: неизвестная escape-последовательность
+C:\Users\Владимир\Desktop\Новые заказы в работе\ООП\Алина Шишкина\Проект\AreaPlanning\MainForm.cpp(10,35): warning C4129: i: неизвестная escape-последовательность
+C:\Users\Владимир\Desktop\Новые заказы в работе\ООП\Алина Шишкина\Проект\AreaPlanning\MainForm.cpp(11,34): warning C4129: i: неизвестная escape-последовательность
+  ObjectLib.cpp
+  main.cpp
+  Создание кода...
+  FileManager.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  AreaPlanning.vcxproj -> C:\Users\Владимир\Desktop\Новые заказы в работе\ООП\Алина Шишкина\Проект\AreaPlanning\x64\Release\AreaPlanning.exe

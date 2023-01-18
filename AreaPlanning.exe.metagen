@@ -1,0 +1,75 @@
+  AreaPlanning.MainForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly AreaPlanning, Version=0.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Messaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Input.Manipulations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Class BaseObject: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(System.String, System.Drawing.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String name : Public
+    System.Drawing.Point location : Public
+    System.Drawing.RotateFlipType AngleValue : Public
+    Boolean Select : Public
+  Methods:
+    Exist(Point): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Paint(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RotateLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RotateRight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FlipX(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FlipY(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Model: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :BaseObject
+    Void .ctor(System.String, System.Drawing.Point, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Image ImageValue 'get set' : 
+  Methods:
+    get_ImageValue(): PrivateScope, Public, HideBySig, SpecialName
+    Exist(Point): PrivateScope, Public, Virtual, HideBySig
+    Paint(): PrivateScope, Public, Virtual, HideBySig
+    RotateLeft(): PrivateScope, Public, Virtual, HideBySig
+    RotateRight(): PrivateScope, Public, Virtual, HideBySig
+    FlipX(): PrivateScope, Public, Virtual, HideBySig
+    FlipY(): PrivateScope, Public, Virtual, HideBySig
+Class Area: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Drawing.Size): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Image image : Public
+    System.Drawing.Graphics g : Public, Static
+  Methods:
+    Resize(Size): PrivateScope, Public, HideBySig
+    Count(): PrivateScope, Public, HideBySig
+    SetBackground(String): PrivateScope, Public, HideBySig
+    AddModel(BaseObject): PrivateScope, Public, HideBySig
+    RemoveModel(): PrivateScope, Public, HideBySig
+    RotateModel(RotateOption): PrivateScope, Public, HideBySig
+    FlipModel(FlipOption): PrivateScope, Public, HideBySig
+    GetModel(Point): PrivateScope, Public, HideBySig
+    GetSelectedModels(): PrivateScope, Public, HideBySig
+    ResetSelection(): PrivateScope, Public, HideBySig
+    Select(BaseObject): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+Class AreaPlanning.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
